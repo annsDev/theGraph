@@ -1,0 +1,17 @@
+{
+  "name": "the-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "graph codegen ./token.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ annsdev/stable-coin ./token.yaml --access-token"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "0.33.0",
+    "@graphprotocol/graph-ts": "^0.25.0",
+    "typescript": "^4.2.4"
+  }
+}
